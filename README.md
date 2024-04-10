@@ -31,7 +31,7 @@ This analysis was commissioned by the Alphabet Soup foundataion for the purpose 
 
 ## Optimization
 The following steps were taken to optimize the model.
-1. The get_dummies encoding was replaced with ordinal encoding for INCOME_AMT and SPECIAL_CONSIDERATIONS features to better reflect the ordinal nature of the data.
+1. The get_dummies encoding was replaced with ordinal encoding for INCOME_AMT and SPECIAL_CONSIDERATIONS features to better reflect the ordinal nature of the data as a result the number of features input into the model was reduced from 43 to 34.
 2. The number of bins used to classify the CLASSIFICATION and and 'APPLICATION_TYPE were increased to see if they improved the model these levels indicated the original however the results were not less accurate so the optimal model contained the same bin strategy as the base model.
 3. The resulting data set was split into two groups for training (75%) and testing (25%) with the same random_state as the intial model to limit variation due to how the training and testing data is split.
 4. The data was then run through a Keras Tuner with the following parameters.
