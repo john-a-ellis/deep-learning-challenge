@@ -60,7 +60,7 @@ The following steps were taken to optimize the model.
 ## Summary and Recommendations for Further Analysis:
 Comparing the results from the base model vs the "optimal" model there does not appear to be a significant difference in model performance.  The optimal model however does perform better when processing the test data than the base model as evidenced by the testing accuracy exceeding the training accuracy of the model by .0002 (.7315 - .7313).  This is in comparsion to the base model in which the test results lagged behind the training accuracy by .0093 (.7383 - .7290).  This reduction in overfitting is a result of implementing the L1 regularization where as the base model had none.  
 
-## Items to consider to further improve the model the model:
+## Items to consider to further improve the model:
 1. Reducing the number of bins of the categorical features which were adjusted.
 2. Consider varying the activation functions per layer.
 3. Modify the tuner to allow for varying activation functions per layer
